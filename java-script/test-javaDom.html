@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>Hello Word</div>
+
+    <input id="firstname" class="input" type="text" name="firstname" value="ทดสอบ">
+    <input id="lastname" class="input" type="text" name="lastname" value="ทดสอบ2">
+
+    <div>
+        <input type="checkbox" name="interest" value="books">books
+        <input type="checkbox" name="interest" value="games">games
+        <input type="checkbox" name="interest" value="sports">sports
+    </div>
+
+    <div>
+        <input type="radio" name="gender" value="male" onchange="changeGender()">male
+        <input type="radio" name="gender" value="female" onchange="changeGender()">female
+        <input type="radio" name="gender" value="other" onchange="changeGender()" checked="true">other
+    </div>
+
+    <button onclick="userClicked()">button</button>
+
+    <script>
+        // let firstnameDOM = document.getElementById('firstname')
+        // console.log('getElementById: ', firstnameDOM.value)
+
+        // let inputDom = document.getElementsByClassName('input')
+        // for (let i = 0; i < inputDom.length; i++) {
+        //     console.log('getElementsByClassName: ', inputDom[i].value)
+        // }
+
+        // let firstnameDom2 = document.querySelector('#firstname')
+        // console.log('querySelector: ', firstnameDom2.value)
+
+        // let firstnameDom3 = document.querySelector('input[name=firstname]')
+        // console.log('querySelector: ', firstnameDom2.value)
+
+        // let checkboxinput = document.querySelectorAll('input[name=interest]')
+        // for (let i = 0; i < checkboxinput.length; i++) {
+        //     console.log('querySelectorAll: ', checkboxinput[i].value)
+        // }
+
+        // function userClicked(){
+        //     console.log('you click')
+        // }
+
+        // function changeGender() {
+        //     let genderInput = document.querySelectorAll('input[name=gender]')
+        //     let gender = ''
+        //     for(let i = 0; i < genderInput.length; i++){
+        //         if(genderInput[i].checked){
+        //             gender = genderInput[i].value
+        //         }
+        //     }
+        //     console.log('gender: ', gender)
+        // }
+
+    </script>
+</body>
+
+</html>

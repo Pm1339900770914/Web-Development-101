@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            margin: 10px;
+        }
+
+        .left {
+            background-color: rgb(214, 15, 39);
+            text-align: center;
+            color: white;
+            flex: 1;
+        }
+
+        .right {
+            background-color: rgb(15, 39, 214);
+            text-align: center;
+            color: white;
+            flex: 1;
+        }
+
+        .grid-contanier {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+
+        .item1,
+        .item3 {
+            background-color: rgb(214, 15, 39);
+            text-align: center;
+            color: white;
+        }
+
+        .item2,
+        .item4 {
+            background-color: rgb(15, 214, 35);
+            text-align: center;
+            color: white;
+        }
+
+        /* มี top, bottom, left, right */
+        .relative {
+            /* จะอิงจากตำแหน่งปกติของมัน */
+            position: relative;
+            left: 20px;
+        }
+
+        .absolute {
+            /* จะอิงจากพ่อแม่ที่ใกล้ที่สุดที่ไม่ใช่ static อิงจากหน้าจอ*/
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+
+        .fixed {
+            /* จะอยู่กับที่ไม่ว่าจะเลื่อนหน้าเพจยังไง */
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            background-color: lightblue;
+        }
+
+        .sticky {
+            /* จะอิงจากตำแหน่งปกติของมัน จนกว่าเราจะเลื่อนเกินจุดที่กำหนด */
+            position: sticky;
+            top: 0;
+            background-color: lightgreen;
+        }
+
+        .float-Left { /* จะชิดซ้าย */
+            float: left;
+
+        }
+
+        .Float-Right {
+            float: right;
+        }
+
+        .image {
+            width: 300px;
+            height: 200px;
+            background-image: url("https://fastly.picsum.photos/id/1/200/300.jpg?hmac=jH5bDkLr6Tgy3oAg5khKCHeunZMHq0ehBZr6vGifPLY");
+            background-position: top right;
+            background-repeat: no-repeat;
+        }
+
+        .box {
+            height: 20vh; /* 20% ของความสูงหน้าจอ */
+            width: 50vw; /* 50% ของความกว้างหน้าจอ */
+            background-color: lightcoral;
+            /* em คือ 2 เท่าของ font-size ปัจจุบัน */
+            /* rem คือ 2 เท่าของ font-size รากฐาน (ปกติคือ 16px) */
+        }
+    </style>
+</head>
+
+<body>
+
+        <div class="float-Left">
+        <img src="https://fastly.picsum.photos/id/1/200/300.jpg?hmac=jH5bDkLr6Tgy3oAg5khKCHeunZMHq0ehBZr6vGifPLY" >
+    </div>
+    <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+    <div class="Float-Right">
+        Test
+    </div>
+
+    <div style="clear: both;"></div>
+    <div class="container">
+        <div class="left">Left</div>
+        <div class="right">Right</div>
+    </div>
+
+    <div class="grid-contanier">
+        <div class="grid-item item1">item 1</div>
+        <div class="grid-item item2">item 2</div>
+        <div class="grid-item item3">item 3</div>
+        <div class="grid-item item4">item 4</div>
+    </div>
+
+    <div class="container2">
+        <div class="static">static</div>
+        <div class="relative">relative</div>
+        <div class="absolute">absolute</div>
+        <div class="fixed">fixed</div>
+        <div class="sticky">sticky</div>
+    </div>
+
+    <div class="image"></div>
+
+    <div class="box"></div>
+
+</body>
+
+</html>

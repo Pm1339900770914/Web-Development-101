@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button {
+            background-color: orchid;
+            border: none;
+            padding: 20px;
+        }
+
+        .button:hover {
+            background-color: purple;
+            color: white;
+        }
+
+        .button:active {
+            background-color: blue;
+            color: white;
+        }
+
+        .button:focus { /* เวลาคลิกแล้วปล่อยจะ focus */
+            background-color: seagreen;
+        }
+
+        .container .item:first-child { /* เลือก item ที่ 1 */
+            background-color: lightcoral;
+        }
+
+        .container .item:last-child { /* เลือก item ที่ สุดท้าย */
+            background-color: lightseagreen;
+        }
+
+        .container .item:nth-child(2) { /* เลือก item ที่ 2 */
+            background-color: lightblue;
+        }
+
+        .container {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <button class="button">Hover me</button>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+</body>
+</html>

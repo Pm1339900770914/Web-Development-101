@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Poom {
+            color: aqua;
+        }
+
+        .Poom::first-letter {
+            font-size: 32px;
+            color: red;
+        }
+
+        .Poom::before {
+            content: "Hello ";
+            color: green;
+        }
+
+        .Poom::after {
+            content: " Bye";
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="Poom">TestPoom</div>
+</body>
+</html>
