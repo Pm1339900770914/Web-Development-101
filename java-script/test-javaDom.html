@@ -8,9 +8,9 @@
 </head>
 
 <body>
-    <div>Hello Word</div>
+    <div id="hello">Hello Word</div>
 
-    <input id="firstname" class="input" type="text" name="firstname" value="ทดสอบ">
+    <!-- <input id="firstname" class="input" type="text" name="firstname" value="ทดสอบ">
     <input id="lastname" class="input" type="text" name="lastname" value="ทดสอบ2">
 
     <div>
@@ -25,7 +25,21 @@
         <input type="radio" name="gender" value="other" onchange="changeGender()" checked="true">other
     </div>
 
-    <button onclick="userClicked()">button</button>
+    <button onclick="userClicked()">button</button> -->
+
+    <!-- ชื่อจริง: <input type="text" name="firstname" onkeyup="changeFirstname()"> -->
+
+    <!-- <div
+        onmouseup="upItem()"
+        onmousedown="downItem()"
+        onmouseover="overItem()">
+        Click Me
+    </div> -->
+
+    <!-- <div>
+        <button onclick="button1()">Button1</button>
+        <button id="thisbutton2">Button2</button>
+    </div> -->
 
     <script>
         // let firstnameDOM = document.getElementById('firstname')
@@ -61,6 +75,35 @@
         //     }
         //     console.log('gender: ', gender)
         // }
+
+        // function changeFirstname() {
+        //     let firstnameInput = document.querySelector('input[name=firstname]')
+        //     console.log('firstname: ', firstnameInput.value)
+        // }
+
+        // function overItem() {
+        //     console.log('over item')
+        // }
+        // function upItem() {
+        //     console.log('up item')
+        // }
+        // function downItem() {
+        //     console.log('down item')
+        // }
+
+        // function button1() {
+        //     console.log('you click button1')
+        // }
+
+        // let button2 = document.getElementById('thisbutton2')
+        // button2.addEventListener('click', function () {
+        //     console.log('you click button2')
+        // })
+
+        // let helloDom = document.getElementById('hello')
+        // console.log(helloDom.textContent)
+        // console.log(helloDom.innerText) // textContent กับ innerText ต่างกันตรงที่ textContent จะเอาข้อความทั้งหมดมาแสดงรวมถึงข้อความที่ถูกซ่อนด้วย CSS แต่ innerText จะไม่เอาข้อความที่ถูกซ่อนด้วย CSS มาแสดง
+        // console.log(helloDom.innerHTML)
 
     </script>
 </body>
