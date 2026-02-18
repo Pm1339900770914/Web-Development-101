@@ -16,17 +16,17 @@
         </div>
     
             <div class="flex form-input">
-                <div class="header-form">Name</div>
+                <div class="header-form" name="firstname">FirstName</div>
                 <input class="form" type="text">
             </div>
 
             <div class="flex form-input">
-                <div class="header-form">SureName</div>
+                <div class="header-form" name="lastname">LastName</div>
                 <input class="form" type="text">
             </div>
 
             <div class="flex form-input">
-                <div class="header-form">Age</div>
+                <div class="header-form" name="age">Age</div>
                 <input class="form" type="number" min="0" max="120">
             </div>
 
@@ -59,14 +59,14 @@
         <div class="form-input">
             <div class="header-form">overview</div>
             <div>
-                <textarea name="" id=""></textarea>
+                <textarea name="description" id=""></textarea>
             </div>
         </div>
         <div class="center">
-            <button class="button"> submit </button>
+            <button onclick="submitData()" class="button"> submit </button>
         </div>
     </div>
-
+    <script src="form.js"></script>
 </body>
 
 </html>
